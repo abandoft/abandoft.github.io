@@ -54,7 +54,7 @@ jobs:
       - name: Build blog project
         run: |
           echo ${{ github.workspace }}
-          pnpm build
+          pnpm vitepress build
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
